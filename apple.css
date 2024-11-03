@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nerko One", cursive;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+}
+
+.main_div {
+    background-image: url(apple-1835211_640.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.menu_bar {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); */
+    left: -300px;
+    transition: all 0.5s linear;
+}
+
+.menu_bar .logo {
+    position: relative;
+    text-align: center;
+    height: 60px;
+}
+
+.menu_bar .checkmark {
+    position: relative;
+    left: 280px;
+}
+
+.comp li {
+    text-decoration: none;
+    padding: 15px;
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); */
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu_bar .comp li:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.menu_bar .social_media {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.menu_bar .social_media a {
+    padding-right: 15px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.menu_bar {
+    left: 0;
+}
+
+#check:checked~.bar i {
+    opacity: 0;
+}
+
+.bar i:hover {
+    transition: all 0.5s linear;
+}
+
+.menu_bar .social_media a:hover {
+    font-size: 25px;
+}
+
+#heading {
+    text-align: center;
+}
+
+.menu_bar .checkmark i:hover {
+    cursor: pointer;
+}
+
+.bar i:hover {
+    cursor: pointer;
+}
